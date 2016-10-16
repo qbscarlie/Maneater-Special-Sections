@@ -1,0 +1,312 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic);
+
+#ssfooter {
+	background: url(http://themaneater.com/media/style/2012-08/images/namplates/maneaterss-hr.png) no-repeat right bottom;
+}
+footer, header {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+body {
+	width: 100%;
+	font-family: Merriweather, serif;
+	font-size: 1em;
+}
+a {
+    color: #2F7A32 !important;
+}
+p {
+	font-size: 1em;
+    line-height: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+h1, h4 {
+	font-family: "Merriweather", serif;
+	font-weight: bold;
+	margin-top: 0;
+}
+h2, h3 {
+	font-family: "Merriweather", serif;
+	font-weight: bold;
+	margin-top: 0;
+}
+h1 {
+    letter-spacing: -0.05em;
+	text-align: center;
+}
+h2 {
+	font-size: 2em;
+	text-align: center;
+    line-height: 1em;
+    margin-top: 10px;
+}
+h3 {
+	font-size: 1.5em;
+    line-height: 1.25em;
+}
+h4 {
+	font-size: 2em;
+	text-align: center;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+    border-bottom: 0;
+}
+blockquote {
+    float: right;
+    border: 0;
+    text-align: left;
+    width: 33%;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    padding-right: 0;
+    padding-left: 2em;
+    margin: 0 inherit;
+}
+blockquote div.author {
+    font-size: 70%;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+#head {
+    width: 100%;
+    max-height: 100px;
+    <!--background: transparent;
+        url('http://themaneater.com/media/2014/0227/bhm/BHMcover.jpg') no-repeat center top -50px; 
+    background-size: 100%;-->
+    margin-bottom: 15px;
+}
+#head h1 {
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 1em;
+    text-shadow: 0 0 0.2em #000;
+    line-height: 1em;
+    letter-spacing: 0.02em;
+}
+#head h1 a:hover, .features h2 a:hover {
+    text-decoration: none;
+    opacity: 0.7;
+}
+#main-content, .features {
+    max-width: 1600px;
+}
+.features {
+    width: 75%;
+    margin: 0 auto;
+}
+.feature-timeline {
+    width: 100%;
+    margin: 0 auto;
+}
+.features p {
+    font-size: 140%;
+    line-height: 1.7em;
+}
+.main-profile {
+    width: 100%;
+    margin: 0 auto 2em;
+}
+.features .main-profile p {
+    font-size: 110%;
+    line-height: 1.7em;
+}
+.features .main-profile p:first-of-type:first-letter {
+    float: left;
+    color: #2F7A32;
+    font-size: 6em;
+    line-height: 1em;
+    padding-top: 4px;
+    padding-right: 10px;
+    padding-left: 3px;
+}
+.features-title {
+    font-size: 2.75em;
+    margin-bottom: 0.5em;
+}
+
+#ssheader {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+    margin-top: 15px;
+}
+#ssfooter {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#main img {
+	width: 100%;
+}
+.half-article {
+	width: 49%;
+	float: left;
+}
+#halves .half-article:nth-of-type(2n) {
+	margin-left: 2%;
+}
+#big-article p {
+	text-align: center;
+}
+
+.wide-content {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+#ssheader h1 {
+	color: #2F7A32;
+}
+
+.section-break {
+	clear: both;
+	height: 10px;
+}
+
+.body_text {
+	padding: 10px;
+}
+
+#main-content {
+    padding: 0 5%;
+}
+
+@media all and (max-width: 1300px) {
+	#head h1 {
+        font-size: 5em;
+    }
+}
+
+@media all and (max-width: 980px) {
+    body {
+        font-size: 0.9em;
+    }
+    #ssheader {
+        margin-top: 10px;
+    }
+    .features {
+        width: 90%;
+    }
+    #main-content {
+        padding: 0 2%;
+    }
+}
+
+@media all and (max-width: 900px) {
+    #head h1 {
+        font-size: 4em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+}
+
+@media all and (max-width: 620px) {
+    #head h1 {
+        font-size: 3em;
+    }
+    #content h1 {
+        font-size: 1.25em;
+    }
+    .features-title {
+        font-size: 2em;
+    }
+    .profile {
+        width: 45%;
+        padding-bottom: 45%;
+    }
+    #profiles a:nth-child(1) div.profile {
+        margin-left: 5%;
+    }
+    #profiles a:nth-child(3) div.profile {
+        clear: both;
+        margin-left: 5%;
+    }
+    blockquote {
+        padding-left: 1em;
+    }
+}
+
+.ui-dialog {
+    width: 90% !important;
+    max-width: 650px !important;
+    margin-top: 20px;
+    position: fixed !important;
+    border: 6px solid #2F7A32 !important;
+}
+.ui-dialog-titlebar {
+    padding-top: 0 !important;
+}
+.ui-widget-header {
+    background: none;
+    border: none;
+}
+.ui-widget-overlay {
+    background: #000;
+    opacity: 0.5;
+}
+#content {
+    font-family: Merriweather, serif;
+    padding: 0 5% 20px;
+    max-width: 90%;
+}
+#content h1 {
+    line-height: 1em;
+    color: #2F7A32;
+}
+#content h4 {
+    background: none;
+    font-size: 1.5em;
+}
+#articleinfo {
+    width: 100%;
+}
+#content .byline {
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 0.25em;
+}
+#content-meta {
+    font-size: 75%;
+    margin-top: 0.5em;
+    margin-bottom: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#content #articlebody {
+    font-size: 80%;
+    padding: 0;
+    max-width: 100%;
+}
+
+#content-wrap {
+    background: #fff;
+    box-shadow: 0 0 10px #888;
+    z-index: 100;
+    position: relative;
+    margin-top: -15px;
+}
+#main-content {
+    width: 66%;
+    max-width: 700px;
+    padding: 0 2%;
+    margin: 0 auto;
+    background: #fff;
+}
+#main-content p {
+    line-height: 1.8em;
+}
+img.half-width {
+    width: 48.5%;
+    float: left;
+    margin-bottom: 8px;
+    padding-right: 8px;
+}
+.half-width:first-of-type {
+    margin-right: 3%;
+}

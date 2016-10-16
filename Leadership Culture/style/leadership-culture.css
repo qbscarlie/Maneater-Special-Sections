@@ -1,0 +1,20 @@
+#head {
+    background: url('http://www.themaneater.com/media/2015/0909/Nametags_2.jpg') no-repeat center center;
+    background-size: 100% auto;
+}
+#hed {
+    color: #fff;
+    font-size: 10.5em auto;
+    text-align: left;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 1em;
+    text-shadow: 0 0 0.25em #000;
+    line-height: 1em;
+    letter-spacing: 0.05em;
+    opacity: .85;
+}
+#hed-2 {
+    text-align: left;
+    font-size: 100%;
+}

@@ -1,0 +1,252 @@
+/* Homecoming 2015 */
+
+@import url(http://fonts.googleapis.com/css?family=Bitter:700);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:700);
+
+body {
+    width: 100%;
+    background: #fff;
+    font-family: Roboto;
+}
+
+p {
+    font-size: 16px;
+}
+
+header, footer {
+    margin: 0 2em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Bitter;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 1.75em;
+    margin-bottom: 0.4em;
+    line-height: 1.25em;
+}
+
+.clear {
+    clear: both;
+}
+
+#ssinfo {
+    font-size: 12px;
+}
+
+#contentwide {
+    width: 100%;
+}
+
+.banner {
+	background: url(http://themaneater.com/media/2015/1006/HomecomingBanner.jpg) no-repeat center center;
+    background-size: 100%;
+    height: 400px;
+	position: relative;
+	width: 100%;
+    margin-bottom: 1em;
+}
+
+.bannertext {
+	background: #373A36;
+	border-top: 5px solid #c69214;
+	color: #F1F1F1;
+	font-size: 72px;
+	font-weight: bold;
+	left: 0;
+	opacity: 0.9;
+	padding: 0.1em 0.5em;
+	position: absolute;
+	text-transform: uppercase;
+	bottom: 0;
+    line-height: 1.1em;
+}
+
+#image a img {
+	max-width: 100%;
+}
+
+#contentwrapper {
+    clear: left;
+    width: 100%;
+    float: left;
+    background: #fff;
+    overflow: hidden;
+}
+
+#wrappertwo {
+    float: left;
+    width: 100%;
+    background: #e6e6e6;
+    position: relative;
+    right: 33%;
+}
+
+#content {
+	width: 63%;
+    padding: 0 2%;
+	float: left;
+    position: relative;
+    left: 33%;
+    overflow: hidden;
+    background: #fff;
+}
+
+#articlebody {
+	padding-left: 0;
+    width: 100%;
+    min-height: 550px;
+}
+
+#articlebody p {
+    line-height: 1.5em;
+}
+
+#articleinfo {
+	width: 100%;
+}
+
+#articleimage {
+    width: 100%;
+}
+
+p.mainblurb {
+    font-size: 1.5em;
+}
+p.mainblurb:first-letter {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#image .stafferlink {
+    display: none;
+}
+
+/* TABS */
+
+#tabs {
+	width: 33%;
+	float: left;
+    position: relative;
+    left: 33%;
+    overflow: hidden;
+    font-family: Roboto Condensed;
+}
+
+#tabs ul:first-child {
+	display: table;
+}
+
+#tabs ul li.tab-button {
+	display: table-cell;
+    border-left: 4px solid #e6e6e6;
+	width: 21%;
+	background: #F1B82D;
+	font-size: 1.5em;
+    line-height: 1.1em;
+	font-weight: bold;
+	padding: 5px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#tabs ul li.tab-button:first-of-type {
+    border-left: 0;
+}
+
+#tabs ul li.tab-button a {
+	color: black;
+}
+
+#tabs ul li.ui-state-active {
+	background: #e6e6e6;
+}
+
+#tabs ul li.ui-state-active a {
+	color: #000;
+}
+
+
+div.tab-lists {
+	padding: 1em 0;
+    font-size: 1.5em;
+
+}
+
+div.tab-lists ul {
+    width: 90%;
+    margin: 0 auto;
+}
+
+div.tab-lists ul li {
+	list-style: none;
+    background: #f1f1f1;
+    border-bottom: 4px solid #e6e6e6;
+    padding: 0.5em 1em;
+}
+
+/* MEDIA QUERY */
+
+@media all and (max-width: 900px) {
+    #tabs ul li.tab-button {
+        font-size: 1.25em;
+    }
+    div.tab-lists {
+        font-size: 1.25em;
+    }
+    div.tab-lists ul {
+        width: 100%;
+        margin: 0 auto;
+    }
+    h1 {
+        font-size: 1.6em;
+        margin-bottom: 0.2em;
+    }
+    .bannertext {
+        font-size: 48px;
+    }
+}
+
+@media all and (max-width: 800px) {
+    #contentwrapper {
+        float: none;
+    }
+    
+    .banner {
+        height: 180px;
+    }
+
+    #wrappertwo {
+        float: none;
+        position: static;
+        right: auto;
+    }
+
+    #content {
+        width: 96%;
+        padding: 0 2%;
+        float: none;
+        position: static;
+        left: auto;
+        padding-top: 1em;
+    }
+    #tabs {
+        width: 100%;
+        float: none;
+        position:static;
+        left: auto;
+    }
+    #ssheader {
+        margin: 1em 0;
+        font-size: 90%;
+    }
+}
+
+@media all and (max-width: 800px) {
+    h1 {
+        font-size: 1.4em;
+    }
+}

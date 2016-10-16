@@ -1,0 +1,13 @@
+#head {
+    background: url('http://www.themaneater.com/media/2015/0213/Bennet_2.jpg') no-repeat center center;
+    background-size: 100% auto; 
+}
+#hed {
+    padding: 0.5em;
+    line-height: 1.6em; 
+    opacity: 1;
+/** font-size: 800%; **/
+}
+#hed-2 {
+    font-size: 136%;
+}
