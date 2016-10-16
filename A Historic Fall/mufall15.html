@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html style="height: 100%;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<title>The Maneater – Special Section – A Historic Fall at MU</title>
+
+	<link rel="stylesheet" type="text/css" href="http://themaneater.com/media/style/2009-01/style/960/960.css" />
+	<link rel="stylesheet" type="text/css" href="http://themaneater.com/media/style/2012-08/style/maneater.css" /> 
+	<link rel="shortcut icon" href="http://www.themaneater.com/media/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" sizes="144x144" href="http://www.themaneater.com/media/apple-144.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="http://www.themaneater.com/media/apple-114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="http://www.themaneater.com/media/apple-72x72.png">
+	<link rel="apple-touch-icon" href="http://www.themaneater.com/media/apple-57.png">
+	<link rel="alternate" type="application/rss+xml" title="Latest Articles RSS Feed" href="http://www.themaneater.com/feeds/latest/">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+	<meta charset="UTF-8">
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="http://themaneater.com/media/style/2009-01/js/jquery.innerfade.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script type="text/javascript" src="http://themaneater.com/media/2013/1022/homecoming2013/jquery.fancybox.js"></script>
+    
+    <script>
+    $(document).ready(function(){
+        $( ".vets" ).click(function() {
+            var url = $(this).attr("title");
+            var link = this.title;                  
+            $("div#content h1").load(url + " #content h1", function(){
+                var headline = $("div#content h1 h1").text();
+                $("div#image").load(url + " #image a");
+                $("span#author").load(url + " .byline");
+                $("div#articlebody").load(url + " #articlebody article");
+                $("a#permalink").attr("href", link);
+                $("#fbshare").attr("href", "https://www.facebook.com/sharer/sharer.php?u=" + link);
+                $("#twshare").attr("href", "http://twitter.com/intent/tweet?text=" + headline + "&url=" + link + "&via=TheManeater");
+                $( "#content" ).dialog( "open" );
+                return false;
+            });
+        });
+        
+        $( "#content" ).dialog({
+            autoOpen: false,
+            draggable: false,
+            maxWidth: 650,
+            maxHeight: $( window ).height() - 40,
+            width: 'auto',
+            fluid: true,
+            position: { my: "center", at: "top", of: window },
+            modal: true,
+            open: function(event, ui){ 
+                fluidDialog(); // needed when autoOpen is set to true in this codepen
+            }
+        });
+        
+               // run function on all dialog opens
+        $(document).on("dialogopen", ".ui-dialog", function (event, ui) {
+            fluidDialog();
+        });
+        
+        // remove window resize namespace
+        $(document).on("dialogclose", ".ui-dialog", function (event, ui) {
+            $(window).off("resize.responsive");
+        });
+        
+        function fluidDialog() {
+            var $visible = $(".ui-dialog:visible");
+            // each open dialog
+            $visible.each(function () {
+                var $this = $(this);
+                var dialog = $this.find(".ui-dialog-content").data("dialog");
+                // if fluid option == true
+                if (dialog.options.maxWidth && dialog.options.width) {
+                    // fix maxWidth bug
+                    $this.css("max-width", dialog.options.maxWidth);
+                    //reposition dialog
+                    dialog.option("position", dialog.options.position);
+                }
+        
+                if (dialog.options.fluid) {
+                    // namespace window resize
+                    $(window).on("resize.responsive", function () {
+                        var wWidth = $(window).width();
+                        // check window width against dialog width
+                        if (wWidth < dialog.options.maxWidth + 50) {
+                            // keep dialog from filling entire screen
+                            $this.css("width", "90%");
+                            
+                        }
+                      //reposition dialog
+                      dialog.option("position", dialog.options.position);
+                    });
+                }
+        
+            });
+        }
+        
+    });
+    </script>
+    
+	<link rel="image_src" href="http://www.themaneater.com/media/2012/thumbnails/default.png">
+
+	<meta name="title" content="The Maneater – Special Section – A Historical Fall at MU">
+	<meta name="description" content="From protests to administrative announcements, a lot has happened since August at MU.">
+	<meta name="keywords" content="tigers, university of missouri, maneater, mizzou, Grad Rights, Planned Parenthood, Hunger Strike, Racism, Campus Projects">
+    
+    <meta property="og:title" content="A Historic Fall at MU - The Maneater" />
+    <meta property="og:url" content="http://www.themaneater.com/special-sections/mu-fall-2015/" />
+    <meta property="og:image" content="http://www.themaneater.com/media/2015/0925/photos/Racism3O_jpg_900x800_q85.jpg"/>
+    <meta property="og:description" content="From protests to administrative announcements, a lot has happened since August at MU." />
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="http://www.themaneater.com/media/2015/0925/photos/Racism3O_jpg_900x800_q85.jpg">
+    <meta name="twitter:title" content="A Historic Fall at MU">
+    <meta name="twitter:description" content="From protests to administrative announcements, a lot has happened since August at MU.">
+    <meta name="twitter:image" content="http://www.themaneater.com/media/2015/0925/photos/Racism3O_jpg_900x800_q85.jpg">
+
+
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+	<link rel="stylesheet" type="text/css" href="http://themaneater.com/media/style/2015-0401/sw2015.css" />
+    
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script type="text/javascript" src="http://themaneater.com/media/style/2010-04/js/jquery.easing.js"></script>
+	<script type="text/javascript">
+    $(document).ready(function()
+    {
+        $("div.body_text").hide();
+        $("h4.reveal_blurb").click(function() {
+            if($(this).next("div.body_text").is(':visible')) {
+                $(this).next("div.body_text").slideUp('normal');
+            } else {
+                $("div.body_text").slideUp('normal');
+                $(this).next("div.body_text").slideDown('normal');
+            }
+        });
+    });
+	</script>
+    <link rel="stylesheet" href="http://themaneater.com/media/2013/1022/homecoming2013/jquery.fancybox.css" type="text/css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="http://themaneater.com/media/style/2014-02/longread.css" />
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-8727143-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+	<script type="text/javascript">
+	function recordOutboundLink(link, category, action) {
+	  try {
+	    var myTracker=_gat._getTrackerByName();
+	    _gaq.push(['myTracker._trackEvent', ' + category + ', ' + action + ']);
+	  }catch(err){}
+	}
+	</script>
+</head>
+<body> 
+    <div id="skrollr-body">
+	<div id="content-container">
+
+        <div id="topbar">
+            <div id="ssheader">
+                <h1><a href="http://themaneater.com"><img src="http://themaneater.com/media/style/2014-02/nameplate.png" width="180px" style="vertical-align: baseline;"></a></h1>
+                <div id="topshare">
+                    <p>Share&nbsp;<a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.themaneater.com%2Fspecial-sections%2Fmu-fall-2015%2F" target="_blank" class="fb-share"></a>&nbsp;<a href="https://twitter.com/intent/tweet?text=Interactive%20Timeline:%20A%20Historic%20Fall%20at%20MU&url=http%3A//www.themaneater.com/special-sections/mu-fall-15/&via=TheManeater" target="_blank" class="tw-share"></a></p><br>
+                </div>
+            </div>
+        </div>
+	<div id="content-container">        
+    <div class="clear"></div>
+        
+    <div class="feature-timeline">
+        <div class="main-profile">
+            <br><p></p><iframe src='http://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1G0KER6WtvcL2LdRRQ3coV063A-sas4nIl4hJzRV_h-E&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' frameborder='0'></iframe></p>
+        </div>
+	</div>
+     <hr>
+    <div class="clear"></div>
+    </div>    
+	<footer>
+		<div id="ssfooter">
+			<p id="ssinfo"><br>Published November 5th, 2015<br>Designed by <a class="stafferlink" href="http://www.themaneater.com/staff/view/carlie-procell/">Carlie Procell</a></p>
+			<a id="sslink" href="http://www.themaneater.com/"></a>
+        </div>
+	</footer>
+	</div>
+	</div>
+	<div class="clear"></div>
+	</div>
+</body>
